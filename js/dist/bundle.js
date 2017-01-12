@@ -46,7 +46,7 @@
 
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(32);
-	var Main = __webpack_require__(178);
+	var Main = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"../components/main.js\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 	__webpack_require__(179);
 
 	ReactDOM.render(React.createElement(Main, null),document.getElementById("container"));
@@ -21480,35 +21480,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(3)))
 
 /***/ },
-/* 178 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var React = __webpack_require__(1);
-	var ReactDOM = __webpack_require__(32);
-
-	var Main = React.createClass({displayName: "Main",
-
-		render:function(){
-			return(
-					React.createElement("div", {id: "main"}, 
-						React.createElement("div", {id: "mainHeader"}, "This is todo list"), 
-						React.createElement("div", {id: "inputTodo"}, 
-							React.createElement("input", {type: "text", placeholder: "请输入任务"})
-						), 
-						React.createElement("div", {id: "spaceHd"}), 
-						React.createElement("div", {id: "mainFooter"}, 
-							React.createElement("div", null, React.createElement("input", {type: "checkbox"}), "全选"), 
-							React.createElement("div", {id: "todosNum"}, "已完成/全部"), 
-							React.createElement("div", {id: "dltAll"}, React.createElement("input", {type: "butotn", value: "清除全部"}))
-						)
-					)
-				)
-		}
-	})
-
-	module.exports = Main;
-
-/***/ },
+/* 178 */,
 /* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -21543,7 +21515,7 @@
 
 
 	// module
-	exports.push([module.id, "#main{\n\twidth:100%;\n\tborder:none;\n\ttext-align: center;\n}\n#mainFooter{\n\tmargin:10px auto;\n\tborder:1px solid #ddd;\n\twidth:80%;\n\theight:24px;\n}\n#mainFooter:after{\n\tclear:both;\n\tcontent: \"\";\n\tdisplay: block;\n}\n#mainFooter div{\n\tfloat:left;\n\tmargin-left: 10px;\n}\n#mainFooter #dltAll{\n\tfloat:right;\n\tmargin-right: 10px;\n}", ""]);
+	exports.push([module.id, "#main{\n\twidth:100%;\n\tborder:none;\n\ttext-align: center;\n\theight:auto;\n}\n#mainFooter,.todoItem{\n\tmargin:10px auto;\n\tborder:1px solid #ddd;\n\twidth:80%;\n\theight:auto;\n}\n#mainFooter:after,.todoItem:after{\n\tclear:both;\n\tcontent: \"\";\n\tdisplay: block;\n}\n#mainFooter div{\n\tfloat:left;\n\tmargin-left: 10px;\n}\n#mainFooter #dltAll{\n\tfloat:right;\n\tmargin-right: 10px;\n}\n.todoItem div{\n\tfloat:left;\n\tborder:none;\n\tmargin:5px 10px;\n}\n.todoItem .delBtn{\n\tfloat:right;\n\topacity: 0；\n}\n.todoItem .delBtn input{\n\tdisplay:inline-block;\n\tbackground-color: #97c76e;\n\tborder-radius:3px;\n}\n.todoItem .delBtn input:hover{\n\topacity: 1\n}", ""]);
 
 	// exports
 
